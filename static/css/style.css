@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: rgb(5, 27, 2);
+    color: rgb(164, 211, 164);
+}
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background: rgb(132, 207, 109)
+
+}
+.header .navbar .menu li{
+    display: inline;
+    font-size: 1.3em;
+    margin: 0 10px;
+}
+.header .navbar .menu li a{
+    color: rgb(16, 43, 4);
+    text-decoration: none;
+}
+.header .logo {
+    color: black;
+    font-size: 1.3em;
+}
+
+
+.btn {
+    background: rgba(99, 230, 99, 0.834);
+    padding: 10px 30px;
+    border-radius: 30px;
+    transition: all .8s;
+    border: .5px solid white;
+    margin-top: 40px;
+}
+.btn:hover {
+    scale: 1.1;
+    color:rgb(199, 199, 224) ;
+
+}
+.header .header-banner {
+    display: flex;
+    width: 100%;
+    margin: 10% 0;
+    padding: 20px;
+}
+.header .banner-content{
+    padding: 20px;
+    font-size: 1.2em;
+    width: 75%;
+}
+.header .banner-image{
+    width: 50%;
+    overflow: hidden;
+    transition: all 1.5s;
+    border-radius: 10px;
+
+}
+
+.header .banner-image .img{
+    width: 100%;
+}
+.header .banner-image img:hover {
+    transform: rotateY(180deg);
+    scale: 1.2;
+}
+
+.heading {
+    text-align: center;
+    font-size: 1.5em;
+    justify-content: space-evenly;
+}
+.heading span {
+    color: rgb(210, 248, 208);
+}
+.features .cards{
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    margin: 0 40px;
+
+}
+.features .card {
+    background: rgb(215, 245, 170);
+    padding: 20px;
+    color: #222;
+    transition: all 1s;
+    border-radius: 10px;
+}
+.features .card:hover{
+    scale: 1.1;
+    background: linear-gradient(to left bottom, rgb(113, 221, 113), rgba(211, 243, 135, 0.834), rgba(124, 146, 51, 0.834));
+
+}
+.features .card img {
+
+    width: 95%;
+    height: 300px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.features .card .content{
+    margin: 20px 10px;
+}
+.features .card .btn{
+    width: 100%;
+    background-color: #63e66a;
+}
+.features .card:hover .btn{
+    background-color: #07360b;
+    color: #b8f1bb;
+}
+
+.banner {
+    height: 90vh;
+    background: url(../img/banner_image.png) fixed center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.banner .banner-txt {
+    text-align: center;
+    background: rgba(10, 10, 10, .7);
+    padding: 5% 30%;
+
+}
+.banner .banner-txt h1{
+    margin: 20px 0;
+}
+
+.contact {
+    margin: 40px ;
+
+}
+.contact .form-input input, textarea{
+    width: 100%;
+    border: none;
+    background: rgb(19, 18, 18);
+    color: aliceblue;
+    border-bottom: 1px solid #eee;
+    margin: 7px 0;
+    padding: 10px 5px;
+}
+.contact{
+    margin: 40px;
+}
+.contact-form {
+    width: 45%;
+    margin: 10px;
+    padding: 10px;
+}
+.contact .form-input input::placeholder, textarea::placeholder{
+    color: beige;
+}
+.contact .container {
+    display: flex;
+}
+.contact .contact-img{
+    width: 40%;
+    margin: 40px;
+    position: relative;
+    transition: all 2s;
+
+}
+.contact .contact-img .img-txt{
+    position: absolute;
+    display: none;
+    bottom: 40%;
+    left: 5%;
+    transition: all 2s;
+    color: #07360b;
+
+}
+.contact .contact-img:hover .img-txt{
+    display: block;
+    transition: all 2s;
+
+}
+.contact .contact-img img{
+    width: 90%;
+}
+
+.footer {
+    gap: 40px;
+    display: flex;
+    background-image: linear-gradient(to left, rgba(10, 10, 10, .6), rgba(0, 0, 0, .8)), url(../img/cover.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+}
+.footer .logo, .contact, .social-media{
+    width: 30%;
+    font-size: 1.2em;
+
+}
+
+.footer .contact li, .social-media li{
+    list-style: none;
+    margin: 20px;
+}
+.footer .social-media a{
+    color: #b4b1b1;
+    text-decoration: none;
+}
+.about {
+    margin: 10%;
+}
+.about .heading {
+    margin: 40px;
+}
+.prediction {
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.prediction h1{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: #222;
+    margin-bottom: 3%;
+    background: rgba(210, 248, 208, 0.5);
+}
+.prediction input{
+    width: 80%;
+    background: rgb(210, 248, 208, 0.5);
+    padding: 20px;
+}
+.registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0;
+    
+}
+.registration form{
+    padding: 40px;
+    width: 40%;
+    border-radius: 15px;
+    background-color: rgba(177, 224, 157, 0.315);
+}
+.registration .form-input {
+    margin-bottom: 15px;
+}
+.registration .form-input input{
+    background:rgba(169, 216, 148, 0.849);
+    width: 100%;
+    padding: 7px;
+    display: block;
+}
+.registration form h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.registration .form-link {
+    text-align: center;
+}
+.registration .form-link span a{
+    color:rgb(241, 79, 74);
+
+}
+.registration .alert-danger{
+    color: #e6677c;
+}
+.registration .alert-success{
+    background-color: #bdf377;
+    color: #222;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+@media screen and (min-width: 320px) and (max-width: 650px){
+    .header .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-banner{
+        flex-direction: column;
+
+    }
+    .header-banner .banner-content{
+        width: 100%;
+    }
+    .header-banner .banner-image{
+        width: 100%;
+    }
+    .features .cards {
+        flex-direction: column;
+    }
+    .contact .container{
+        flex-direction: column;
+    }
+    .contact .container .contact-form {
+        width: 100%;
+    }
+    .contact .container .contact-img{
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+    }
+    .footer{
+        flex-wrap: wrap;
+        gap: 80px;
+    }
+
+    .footer .logo{
+        width: 100%;
+        margin: 10px;
+    }
+    .footer .contact, .footer .social-media{
+        margin: 10px;
+    }
+    .footer-contact, .social-media{
+        width: 100%;
+    }
+}

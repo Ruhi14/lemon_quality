@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<!----------------------------header------------------------->
+    <section class="header">
+        <div class="navbar">
+            <div class="logo">
+                <h4>Lemon Detactor</h4>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About us</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li><a href="{% url 'login' %}">Login</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="header-banner">
+            <div class="banner-content">
+                <h1><a style="text-decoration: none; color:rgb(162, 226, 173)" href="{% url "home" %}">Welcome to LemonQualityTester</a></h1>
+                <p>At LemonQualityTester, we provide a precise and reliable way to evaluate the quality of your lemons. Our state-of-the-art testing technology ensures that you get the freshest and best-tasting lemons every time, whether you’re a consumer, retailer, or supplier.At LemonPredictor, we revolutionize the way you choose and enjoy lemons. Our cutting-edge technology leverages advanced data analytics and machine learning to predict the quality of lemons with unmatched accuracy. Whether you’re a consumer looking for the perfect lemon for your recipes or a supplier aiming to ensure top-notch produce, we’ve got you covered.</p>
+                <button class="btn">join us now</button>
+            </div>
+            <div class="banner-image">
+                <img src="/static/img/lemonindex.png" alt="" class="rotate-image">
+            </div>
+
+        </div>
+    </section>

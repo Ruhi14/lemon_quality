@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!----------==================start banner======================-->
+<section class="banner">
+    <div class="banner-txt">
+        <h1>Here You Can Register</h1>
+        <p>Welcome to Lemon Quality Test - Your Trusted Source for Ensuring the Best Lemons
+    
+            Join our community of quality experts and enthusiasts dedicated to maintaining the highest standards in lemon production.
+            Whether you are a grower, supplier, or retailer, our platform provides the tools and resources you need to assess and ensure the quality of your lemons. 
+            Register now to access expert insights, detailed guidelines, and comprehensive quality testing procedures that guarantee your lemons meet the highest industry standards. 
+            Together, we can achieve excellence in every lemon!</p>
+        <button class="btn">Register here</button>
+    </div>
+    
+    </section>
+    <!----------==================end banner=======================-->
+    <!----------==================start contact=======================-->
+    <section class="contact">
+    <div class="heading"> 
+        <h1>Get In <span>Touch</span></h1>
+    </div>
+    <div class="container">
+        <div class="contact-form">
+            <form action="" method="post">
+                {% csrf_token %}
+                <div class="form-input">
+                    <input type="email" placeholder="enter you Email">
+                </div>
+                <div class="form-input">
+                    <input type="text" placeholder="enter you subject">
+                </div>
+                <div class="form-input">
+                    <textarea name="" rows="10" placeholder="enter you Text here"></textarea>
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+        <div class="contact-img">
+            <img src="/static/img/le.png">
+            <div class="img-txt">
+                <h1>Join Our Lemon Quality Testing Community.</h1>
+                <button class="btn"></button>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!----------==================end contact=======================-->
+{% endblock content %}

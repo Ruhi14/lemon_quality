@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="registration">
+        <form action="" novalidate method="post">
+            <h1>Login</h1>
+
+            {% csrf_token %}
+            {% if messages %}
+                {% for message in messages %}
+                <p class="alert-success">{{ message }}</p>
+                
+                {% endfor %}
+            {% endif %}
+            {% for fm in form %}
+            <div class="form-input">
+                {{ fm.label }}{{ fm }} <small class="alert-danger">{{ fm.errors|striptags }}</small>
+            </div>
+            {% endfor %}
+            <div class="form-link">
+                <small>Not Registered! <span class="text-danger">
+                    <a href="{% url 'registration' %}">Sign Up</a></span>
+                </small>
+            </div>
+            <input type="submit" class="btn" value="Register"> 
+            {% if form.non_field_errors %}
+                {% for error in form.non_field_errors %}
+                    <div class="alert-danger">{{ error }}</div>
+                {% endfor %}
+            {% endif %}
+        </form>
+    </div>
+{% endblock content %}

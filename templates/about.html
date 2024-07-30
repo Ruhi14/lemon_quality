@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+<!------------about start------------->
+<section class="about">
+    <div class="heading">
+        <h1>About <span>Us</span></h1>
+    </div>
+    <p align="justify">Welcome to LemonQualityTest, your go-to resource for ensuring the highest quality and freshness of lemons. Our mission is to empower consumers, retailers, and producers with the tools and knowledge needed to assess and guarantee the superior quality of lemons.
+        At LemonQualityTest, we understand that the quality of lemons can significantly impact their taste, shelf life, and nutritional value. Founded by a team of passionate agricultural experts and technologists, our goal is to bridge the gap between traditional farming methods and modern technology. 
+        We believe that everyone deserves to enjoy the best lemons, whether you're using them in a recipe, making lemonade, or simply enjoying them fresh.
+        Our easy-to-use platform allows users to upload images of their lemons or enter specific details for a thorough quality analysis. Within moments, our system provides detailed insights and recommendations, helping you make informed decisions about the lemons you purchase or sell.
+    </p>
+    <br>
+</section>
+
+<!------------about end------------->
+
+<!-----------features------------->
+<section class="features">
+    <div class="heading"> 
+        <h1>Our <span>Features</span></h1>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <img src="/static/img/good_quality.png" alt="">
+            <div class="content">
+                <h1>Good quality Lemon</h1>
+                <p>High-quality lemons exhibit several key characteristics that signify their excellence. A vibrant, uniform yellow color without any green patches or discolorations is essential, and the skin should be smooth, free from blemishes, scars, or wrinkles.</p>
+                <button class="btn">read more</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/static/img/empty_path.png" alt="">
+            <div class="content">
+                <h1>Good quality Lemon</h1>
+                <p>This image is intended for lemon quality testing but currently shows no lemons. An empty image can be used as a control reference to highlight the absence of product and ensure that the testing and assessment process focuses on the presence and quality of lemons. </p>
+                <button class="btn">read more</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/static/img/bad_quality.png" alt="">
+            <div class="content">
+                <h1>Bad quality Lemon</h1>
+                <p>Low-quality lemons exhibit several distinct characteristics that make them easily identifiable. They often have uneven coloration, with patches of green or brown indicating poor ripeness or overripeness. The skin may be rough, scarred, or wrinkled, suggesting damage or age.</p>
+                <button class="btn">read more</button>  
+            </div>
+        </div>
+    </div>
+</section>
+<!----------==================end features=======================-->
+{% endblock content %}

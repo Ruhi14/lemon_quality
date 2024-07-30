@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-----------features------------->
+<section class="features">
+    <div class="heading"> 
+        <h1>Our <span>Features</span></h1>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <img src="/static/img/good_quality.png" alt="">
+            <div class="content">
+                <h1>Good quality Lemon</h1>
+                <p>High-quality lemons exhibit several key characteristics that signify their excellence. A vibrant, uniform yellow color without any green patches or discolorations is essential, and the skin should be smooth, free from blemishes, scars, or wrinkles.</p>
+                <button class="btn">read more</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/static/img/empty_path.png" alt="">
+            <div class="content">
+                <h1>Good quality Lemon</h1>
+                <p>This image is intended for lemon quality testing but currently shows no lemons. An empty image can be used as a control reference to highlight the absence of product and ensure that the testing and assessment process focuses on the presence and quality of lemons. </p>
+                <button class="btn">read more</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="/static/img/bad_quality.png" alt="">
+            <div class="content">
+                <h1>Bad quality Lemon</h1>
+                <p>Low-quality lemons exhibit several distinct characteristics that make them easily identifiable. They often have uneven coloration, with patches of green or brown indicating poor ripeness or overripeness. The skin may be rough, scarred, or wrinkled, suggesting damage or age.</p>
+                <button class="btn">read more</button>  
+            </div>
+        </div>
+    </div>
+</section>
+<!----------==================end features=======================-->
+<!----------==================start banner======================-->
+<section class="banner">
+<div class="banner-txt">
+    <h1>Here You Can Register</h1>
+    <p>Welcome to Lemon Quality Test - Your Trusted Source for Ensuring the Best Lemons
+
+        Join our community of quality experts and enthusiasts dedicated to maintaining the highest standards in lemon production.
+        Whether you are a grower, supplier, or retailer, our platform provides the tools and resources you need to assess and ensure the quality of your lemons. 
+        Register now to access expert insights, detailed guidelines, and comprehensive quality testing procedures that guarantee your lemons meet the highest industry standards. 
+        Together, we can achieve excellence in every lemon!</p>
+    <button class="btn"><a href="{% url 'registration' %}">Register here</a></button>
+</div>
+
+</section>
+<!----------==================end banner=======================-->
+<!----------==================start contact=======================-->
+<section class="contact">
+<div class="heading"> 
+    <h1>Get In <span>Touch</span></h1>
+</div>
+<div class="container">
+    <div class="contact-form">
+        <form action="" method="post">
+            {% csrf_token %}
+            <div class="form-input">
+                <input type="email" placeholder="enter you Email">
+            </div>
+            <div class="form-input">
+                <input type="text" placeholder="enter you subject">
+            </div>
+            <div class="form-input">
+                <textarea name="" rows="10" placeholder="enter you Text here"></textarea>
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    <div class="contact-img">
+        <img src="/static/img/le.png">
+        <div class="img-txt">
+            <h1>Join Our Lemon Quality Testing Community.</h1>
+            <button class="btn"></button>
+        </div>
+    </div>
+</div>
+</section>
+<!----------==================end contact=======================-->
+
+{% endblock content %}

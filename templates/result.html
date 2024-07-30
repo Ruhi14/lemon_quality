@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+    
+    <center>
+        <h1>Predicted Result</h1>
+        <br>
+        <p><strong><em>
+        Lemon Quality = {{ predicted_class }}
+        </em></strong></p>
+        <br>
+        <br>
+        <a href="{% url 'predict' %}" class="btn">Try Another Image</a>
+
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+{% endblock content %}

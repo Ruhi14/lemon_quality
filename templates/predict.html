@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="prediction">
+    <h1>Detect Lemon Quality</h1>
+    <form enctype="multipart/form-data" method="post">
+        {% csrf_token %} 
+        <input type="file" name="file">
+        <button class="btn" type="submit">Upload Image</button>
+    </form>
+</section>
+{% endblock content %}
